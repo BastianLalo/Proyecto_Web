@@ -4,6 +4,8 @@
     ---Color2:#7628cf;
     ---Color3:#f3f161;
     ---Color4:#e7bcbc;
+    ---Color5:#885bbb;
+    ---Color6:#dda0dd;
 }
 html{font-size: 62.5%;display: block;}
 body{
@@ -12,11 +14,11 @@ body{
     font-size: 100%;
     color: #1b262c;
     margin: 0;
-    background-color: #0f4c75;
+    background-color:var(---Color2);
     font-size: 16px;}
 
 /*Cabezera = HEADER*/
-header{display: flex;border: 0.2rem solid #3282b8;background-color: #0f4c75;}
+header{display: flex;border: 0.2rem solid #3282b8;background-color:var(---Color6);}
 .imglogo{
     width: 22rem;
     height: 12rem;
@@ -156,6 +158,31 @@ header{display: flex;border: 0.2rem solid #3282b8;background-color: #0f4c75;}
 .inferior a:hover {
     color: #3282b8;
 }
+/*derechos de autor*/
+#dere{
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(---colorU);
+    border-style: solid;
+    border-color: var(---colorU);
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color:var(---Color3);
+
+    
+}
+#dere>h3{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-items: center;
+    text-decoration: underline;}
 /*medidas para pantallas de Celulares*/
 @media only screen and (max-width: 800px) {
     .Contenedor{

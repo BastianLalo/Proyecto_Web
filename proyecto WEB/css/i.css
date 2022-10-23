@@ -91,11 +91,11 @@ section{
     margin-bottom: auto;
     text-align: justify;
     margin-top: auto;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 section>.div>p{
     font-size: 1.5rem;
@@ -183,6 +183,10 @@ aside{
     height: 40rem;
     text-align: center;
 }
+#videomuestra{
+    height:150px ;
+    width:150px ;
+}
 
 /*derechos de autor*/
 #dere{
@@ -215,10 +219,18 @@ aside{
     max-width: 700px;
 }
 .div{
-    width: 15rem;
+    width: 14rem;
     height: 14rem;
     margin-top: 0.3rem;
     margin-bottom: auto;
+}
+.nombreservicio{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.div p {
+    font-size: 10px;
 }
 .img{
     width: 180px;
@@ -230,11 +242,17 @@ aside{
     
 }
 .imglogo{
-    width: 8.4rem;
+    width: 120px;
     height: 10rem;
 }
 .pie{
     margin-left: 20%;
+}
+.tp{
+    font-size: 50px;
+}
+.tp span{
+    font-size: 40px;
 }
 }
 /*medidas para pantallas de Tablet*/
