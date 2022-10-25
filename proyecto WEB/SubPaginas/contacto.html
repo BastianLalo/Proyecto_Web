@@ -45,7 +45,11 @@
             <input type="email" name="email" id="email" placeholder="Email" required />
         <br>
             <label for="asunto">Asunto</label>
-            <input type ="text" name="asunto" id="asunto" placeholder="Servicio a Adquirir"/>
+            <select name="selector">
+                <option value="Pedido">Consultar estado del Pedido</option>
+                <option value="Consulta_Manga" selected>Consultar Manga a Pedir</option>
+            </select>
+        <br>
         <br>
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres." maxlength="300"></textarea>

@@ -67,7 +67,9 @@ header{display: flex;}
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 section{
     display: flex;
@@ -159,6 +161,9 @@ section>.div>p{
 .box-i{
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 aside{
     width: auto;
@@ -180,14 +185,68 @@ aside{
     justify-content: space-around;
     float: right;
     width: auto;
-    height: 40rem;
+    height: 54rem;
     text-align: center;
 }
-#videomuestra{
-    height:150px ;
-    width:150px ;
+/*Code de imagen video de los mangas*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 280px;
+    height: 440px;
+    margin-bottom: 18px;
 }
-
+.image{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+    animation: cycle 1.5s linear infinite 0s forwards;
+    -webkit-animation: cycle 1.5s linear infinite 0s forwards;
+    animation-play-state: running;
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.container:hover .image{
+    animation-play-state: running;
+}
+.image-1{
+    z-index: 5;
+}
+.image-2{
+    z-index: 4;
+    animation-delay: 6.05s;
+}
+.image-3{
+    z-index: 3;
+    animation-delay: 5.05s;
+}
+.image-4{
+    z-index: 2;
+    animation-delay: 4.05s;
+}
+.image-5{
+    z-index: 1;
+    animation-delay: 3.05s;
+}
+@keyframes cycle{
+    from{
+        visibility: visible;
+        z-index: 5;
+    }
+    to{
+        visibility: hidden;
+        z-index: 0;
+    }
+}
 /*derechos de autor*/
 #dere{
     margin-top: 1rem;
@@ -234,7 +293,7 @@ aside{
 }
 .img{
     width: 180px;
-    height: 200px;
+    height: 300px;
 }
 aside{
     width: auto;
@@ -253,6 +312,20 @@ aside{
 }
 .tp span{
     font-size: 40px;
+}
+.sec-a{
+    height: 540px;
+}
+.container{
+    width: 280px;
+    height: 400px;
+}
+.image{
+    font-size: 100px;
+    
+}
+.se{
+    height:370px;
 }
 }
 /*medidas para pantallas de Tablet*/
@@ -274,7 +347,7 @@ aside{
     }
     .img{
         width:150px;
-        height: 9rem;
+        height: 130px;
     }
     aside{
         width: auto;

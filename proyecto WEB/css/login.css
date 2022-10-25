@@ -45,14 +45,15 @@ header{display: flex;border: 0.2rem solid #3282b8;background-color:var(---Color6
     padding: 0;
     min-width: 100vw;
     min-height: 100vh;
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
 #central {
-    max-width: 320px;
+    max-width: 390px;
     width: 100%;
     margin-bottom: 20rem;
+    height: 300px;
 }
 
 .titulo {
@@ -124,24 +125,6 @@ header{display: flex;border: 0.2rem solid #3282b8;background-color:var(---Color6
     background-color: #0f4c75;
     color:#bbe1fa;
 }
-
-.pie-form {
-    font-size: 90%;
-    text-align: center;    
-    margin-top: 15px;
-}
-
-.pie-form a {
-    display: block;
-    text-decoration: none;
-    color: #bbe1fa;
-    margin-bottom: 3px;
-}
-
-.pie-form a:hover {
-    color: #0f4c75;
-}
-
 .inferior {
     margin-top: 10px;
     font-size: 90%;
@@ -186,7 +169,7 @@ header{display: flex;border: 0.2rem solid #3282b8;background-color:var(---Color6
 /*medidas para pantallas de Celulares*/
 @media only screen and (max-width: 800px) {
     .Contenedor{
-        max-width:700px ;
+        max-width:600px ;
     }
     .box1{
         max-width: 600px;
