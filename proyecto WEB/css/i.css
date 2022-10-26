@@ -219,28 +219,104 @@ aside{
     animation-play-state: running;
 }
 .image-1{
-    z-index: 5;
+    z-index: 4;
 }
 .image-2{
-    z-index: 4;
+    z-index: 3;
     animation-delay: 6.05s;
 }
 .image-3{
-    z-index: 3;
+    z-index: 2;
     animation-delay: 5.05s;
 }
 .image-4{
-    z-index: 2;
+    z-index: 1;
     animation-delay: 4.05s;
 }
 .image-5{
-    z-index: 1;
+    z-index: 0;
     animation-delay: 3.05s;
 }
 @keyframes cycle{
     from{
         visibility: visible;
-        z-index: 5;
+        z-index: 6;
+    }
+    to{
+        visibility: hidden;
+        z-index: 0;
+    }
+}
+/*Code de aside, Enca, sp*/
+.inf-n{
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: auto;
+    height: 55rem;
+}
+.enc3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.enc3 ,.sp{
+
+    font-size: 3rem;
+}
+.inf-n h3{
+    color: var(---Color1);
+}
+.sp{
+    font-size: 2.3rem;
+}
+.color1{
+    color: var(---Color3);
+}
+.color2{
+    color: var(---Color2);
+}
+.contain{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 380px;
+    height: 400px;
+}
+.imag{
+    size: cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: cycle 1.5s linear infinite 0s forwards;
+    -webkit-animation: cycle 1.5s linear infinite 0s forwards;
+    animation-play-state: running;
+    box-shadow: 2px 2px 8px 4px var(---colorT);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    
+}
+.containe:hover .image{
+    animation-play-state: running;
+}
+.imag-1{
+    z-index: 2;
+    
+}
+.imag-2{
+    z-index: 1;
+    animation-delay: 1.05s;
+   
+}
+@keyframes cycle{
+    from{
+        visibility: visible;
+        z-index: 4;
     }
     to{
         visibility: hidden;
@@ -326,6 +402,9 @@ aside{
 }
 .se{
     height:370px;
+}
+.enc3,.sp{
+    font-size: 20px;
 }
 }
 /*medidas para pantallas de Tablet*/
