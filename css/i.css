@@ -223,15 +223,15 @@ aside{
 }
 .image-2{
     z-index: 3;
-    animation-delay: 6.05s;
+    animation-delay: 3.05s;
 }
 .image-3{
     z-index: 2;
-    animation-delay: 5.05s;
+    animation-delay: 3.05s;
 }
 .image-4{
     z-index: 1;
-    animation-delay: 4.05s;
+    animation-delay: 3.05s;
 }
 .image-5{
     z-index: 0;
@@ -239,11 +239,11 @@ aside{
 }
 @keyframes cycle{
     from{
-        visibility: visible;
-        z-index: 6;
+        visibility: visible;/*visible muestra el elemento normalmente */
+        z-index: 4;
     }
     to{
-        visibility: hidden;
+        visibility: visible;/*hidden esconde un elemendo, pero deja el espacio*/
         z-index: 0;
     }
 }
@@ -290,7 +290,7 @@ aside{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    animation: cycle 1.5s linear infinite 0s forwards;
+    animation: cycle 1.5s linear infinite 0s forwards;/*Animacion en css, se ocupara para animar las imgs seleccionadas y con keyframes se configurara*/
     -webkit-animation: cycle 1.5s linear infinite 0s forwards;
     animation-play-state: running;
     box-shadow: 2px 2px 8px 4px var(---colorT);
@@ -316,11 +316,11 @@ aside{
 @keyframes cycle{
     from{
         visibility: visible;
-        z-index: 4;
+        z-index: 2;
     }
     to{
-        visibility: hidden;
-        z-index: 0;
+        visibility:visible;
+        z-index: 1;
     }
 }
 /*derechos de autor*/
