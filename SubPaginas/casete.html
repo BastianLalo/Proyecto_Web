@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Grupo_MangaBuy">
+    <meta name="description" content="Manga Buy es una Web de Chile para Comprar mangas de todo tipo dentro del pais.">
+        <title>MrNess</title>
+        <!--Icono de la Pág-->
+        <link rel="icon" href="../multimedia/log.ico">
+        <!--Enlaces de gogle fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+        <!--Enlaces de google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!--Enlace a css local-->
+        <link rel="stylesheet" href="../css/casete.css">
+        <!--Enlace de JavaScript-->
+        <script src="../scripts.js"></script>
+    </head>
+<body>
+    <main class="Contenedor"><!--Contenedor de la pagina-->
+        <header>
+            <img class="imglogo" src="../multimedia/Logo.gif" alt="Logo">
+            <h1 class="tp">Manga<span>Buy</span></h1>
+        </header>
+        <nav class="nav-ng">
+            <a href="../i.html"><span class="material-symbols-outlined">
+                home
+                </span>Inicio</a>
+                <a href="../SubPaginas/manga.html"><span class="material-symbols-outlined">
+                    book
+                    </span>Mangas</a>
+        </nav>
+    <div class="page-nav">
+        <h1>Lista de Casete Disponibles a la Venta</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Total a Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Evangelion One Last <br> kiss Hiakaru utada</h3>
+            <img src="../multimedia/Evnagelion_One_Last_kiss_Hiakaru_utada.jpg" />
+            <br>
+            <audio controls>
+                <source src="../multimedia/Evangelion_one_last_kiss.mp3">
+            </audio>
+            <h1>$10</h1>
+            <button class="button-add" onclick="add('product-1', 10)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Evangelion Finally</h3>
+            <img src="../multimedia/Cassette_Evangelion_Finally.jpg" />
+            <br>
+            <audio controls>
+                <source src="../multimedia/Evangelion_Finally.mp3">
+            </audio>
+            <h1>$12</h1>
+            <button class="button-add" onclick="add('product-2', 12)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <h3>Sailor Moon Songs <br> From the Hit TV Series</h3>
+            <img src="../multimedia/Sailor_Moon_Song_From_The_Hit_TV_Series.jpg"/>
+            <br>
+            <audio controls>
+                <source src="../multimedia/full-album-sailor-moon-songs-from-the-hit-tv-series.mp3">
+            </audio>
+            <h1>$12</h1>
+            <button class="button-add" onclick="add('product-2', 12)">Agregar</button>
+        </div>
+    </div>
+    <!--Footer con encabezado declarando los derechos de autor-->
+    <footer id="dere">
+        <h3>Copyright ©  2022 · MangaBuy · Web hecha con MangaBuy · Textos legales.</h3>
+    </footer>
+</main>
+<!--       _
+   .__(.)< (MEOW)
+    \___)   
+~~~~~~~~~~~~~~~~~~-->
+</body>
+</html>
