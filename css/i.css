@@ -71,6 +71,25 @@ header{display: flex;}
     margin-left: auto;
     margin-right: auto;
 }
+.sec-n{
+    display: block;
+    height: auto;
+}
+.cont-n{
+ display: grid;
+ justify-content: space-evenly;
+ justify-items: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+.sec-v{
+display: grid;
+justify-content: space-evenly;
+justify-items: center;
+}
+.sec-v>h1{
+    color:#460858;
+}
 section{
     display: flex;
     justify-content: space-around;
