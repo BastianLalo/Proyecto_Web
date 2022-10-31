@@ -11,3 +11,7 @@ function add(product, price) {
 function pay() {
     window.alert(products.join(", \n"));
 }
+//      _
+//  .__(.)< (MEOW)
+//   \___)   
+// ~~~~~~~~~~~~~~~~~~

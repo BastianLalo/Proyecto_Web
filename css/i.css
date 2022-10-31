@@ -219,32 +219,32 @@ aside{
     animation-play-state: running;
 }
 .image-1{
-    z-index: 4;
+    z-index: 5;
 }
 .image-2{
+    z-index: 4;
+    animation-delay: 4.05s;
+}
+.image-3{
     z-index: 3;
     animation-delay: 3.05s;
 }
-.image-3{
-    z-index: 2;
-    animation-delay: 3.05s;
-}
 .image-4{
-    z-index: 1;
-    animation-delay: 3.05s;
+    z-index: 2;
+    animation-delay: 2.05s;
 }
 .image-5{
-    z-index: 0;
-    animation-delay: 3.05s;
+    z-index: 1;
+    animation-delay: 1.05s;
 }
 @keyframes cycle{
     from{
         visibility: visible;/*visible muestra el elemento normalmente */
-        z-index: 4;
+        z-index: 5;
     }
     to{
-        visibility: visible;/*hidden esconde un elemendo, pero deja el espacio*/
-        z-index: 0;
+        visibility: hidden;/*hidden esconde un elemendo, pero deja el espacio*/
+        z-index: 1;
     }
 }
 /*Code de aside, Enca, sp*/
@@ -434,4 +434,9 @@ aside{
         
     }
     }
-    
+    /*
+           _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~
+*/
