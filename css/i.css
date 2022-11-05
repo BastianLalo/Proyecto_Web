@@ -90,9 +90,36 @@ justify-items: center;
 .sec-v>h1{
     color:#460858;
 }
+/* contenedor grid con las dos columnas de inf*/
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: auto auto; /*separacion en dos columnas*/
+    background-color: var(---Color5); /*fondo*/
+    padding: 20px;
+    border-radius: 15px; /*un borde con una curvatura de 15px*/
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.grid-item1,.grid-item2{
+    background-color: var(---Color5);
+    border: 2px solid var(---Color3);
+    font-size: 30px;
+    text-align: center;/*alinacion de los item en el centro*/
+    border-radius: 8px;/*un borde con una curvatura de 8px*/
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.enc-grid{
+    color: var(---Color3);
+}
+/*fin grid*/
 section{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;/*separacion de los item de forma equitativa*/
     width: auto;
     height: 40rem;
     border: 0.2rem solid var(---Color1);
@@ -105,22 +132,6 @@ section{
     background-color:var(---Color5);
 
 }
-.div{
-    border: .2rem dotted whitesmoke;
-    width: 50rem;
-    height: auto;
-    margin-bottom: auto;
-    text-align: justify;
-    margin-top: auto;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-section>.div>p{
-    font-size: 1.5rem;
-}
 
 .img{
     display: block;
@@ -129,12 +140,6 @@ section>.div>p{
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-.nombreservicio{
-    color: purple;
-    font-size: 2.3rem;
-    display: flex;
 }
 .pie{
     background: var(---Color3);
@@ -146,10 +151,9 @@ section>.div>p{
     padding: 1rem;
     text-align: center;
     width: auto;
-    margin-left: 40%;
-    margin-right: auto;
     margin-top: 5px;
     margin-bottom: 5px;
+    
 }
 .pie a{
     text-decoration: none;
@@ -378,11 +382,7 @@ aside{
     margin-top: 0.3rem;
     margin-bottom: auto;
 }
-.nombreservicio{
-    font-size: 15px;
-    margin-left: auto;
-    margin-right:auto;
-}
+
 .div p {
     font-size: 10px;
 }
@@ -424,6 +424,16 @@ aside{
 }
 .enc3,.sp{
     font-size: 20px;
+}
+.v-sec{
+    width: 240px;
+    height: 190px;
+  }
+.contenedor-grid{
+width: auto;
+}
+.grid-item1,.grid-item2{
+    font-size: 12px;
 }
 }
 /*medidas para pantallas de Tablet*/
