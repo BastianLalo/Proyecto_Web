@@ -63,7 +63,7 @@ header{display: flex;}
 }
 /*Code de las cartas de los Productos*/
 button {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     border-radius: 8px;
     padding: 10px 20px;
@@ -92,7 +92,8 @@ button {
     border: 2px solid var(---Color2); /* Color del boton pagar Morado*/
     transition-duration: 0.4s;
     position: absolute;
-    right: 15px;
+    right: 20px;
+    margin-top: 10px;
     bottom: 15px;
 }
 
@@ -205,13 +206,18 @@ button {
         font-size: 12.4px;
     }
     .button-checkout{
+
         width: 100px;
     }
     #checkout{font-size: 10px;}
     button#checkout.button-checkout{
         font-size: 9px;
-        height: 35px;
+        height: 40px;
     }
+    .page-nav
+        button {
+            padding: 10px 10px;
+}
     }
     /*medidas para pantallas de Tablet*/
     @media only screen and (max-width: 1000px) {
