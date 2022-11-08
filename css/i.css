@@ -234,8 +234,8 @@ aside{
     left: 0;
     width: 100%;
     height: 105%;
-    object-fit: cover;
-    animation: cycle 1.5s linear infinite 0s forwards;
+    object-fit: cover;/*reemplazado en relación con la caja establecida por su altura y anchura utilizadas.*/
+    animation: cycle 1.5s initial infinite 0s forwards;/*una animacion en ciclo de 1,5s*/
     -webkit-animation: cycle 1.5s linear infinite 0s forwards;
     animation-play-state: running;
     box-shadow: 2px 2px 8px 4px var(---colorT);
@@ -244,37 +244,32 @@ aside{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    
+    -webkit-animation: cycle 1.5s initial infinite 0s forwards;
 }
 .container:hover .image{
     animation-play-state: running;
 }
+
 .image-1{
-    z-index: 5;
+    z-index: 3;
+    animation-delay: 4.35s;
 }
 .image-2{
-    z-index: 4;
-    animation-delay: 4.05s;
+    z-index: 2;
+    animation-delay: 3.25s;
 }
 .image-3{
-    z-index: 3;
-    animation-delay: 3.05s;
-}
-.image-4{
-    z-index: 2;
+    z-index: 1;
     animation-delay: 2.05s;
 }
-.image-5{
-    z-index: 1;
-    animation-delay: 1.05s;
-}
 @keyframes cycle{
-    from{
+    from{/*hasta*/
         visibility: visible;/*visible muestra el elemento normalmente */
-        z-index: 5;
+        z-index: 3;
+        z-index: 2;
     }
-    to{
-        visibility: hidden;/*hidden esconde un elemendo, pero deja el espacio*/
+    to{/*desde*/
+        visibility: visible;/*hidden esconde un elemendo, pero deja el espacio*/
         z-index: 1;
     }
 }
