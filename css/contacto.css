@@ -53,6 +53,7 @@ header{display: flex;}
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: var(---Color2);
 }
 .nav-ng a span{
     margin-right: 1rem;
@@ -60,6 +61,11 @@ header{display: flex;}
 .nav-ng a:hover{
     height: 5rem;
     background-color: var(---Color4);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 /*Nav con encabezado*/
 .page-nav {
